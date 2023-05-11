@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section
+{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 1200px;
+    height: 600px;
+    background-color: rgb(37, 16, 9);
+    padding-top: 250px;
+    cursor: pointer;
+}
+ .tortburchak 
+ {
+    margin-left: 250px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(85, 52, 17);
+ }
+
+ @keyframes animation
+ {
+    0%{
+        transform: translateX(0);
+        background-color: peru ;
+        border-radius: 0%;
+    }
+   
+    100%{
+        transform: translateX(500px);
+        background-color: rgb(253, 251, 248) ;
+        border-radius: 50%;
+
+    }
+
+ }
+
+ section:active 
+ {
+    cursor: pointer;
+ }
+
+ section:active .tortburchak::after
+ {
+    content: '';
+    position: absolute;
+    width: 80px;
+    border: 1px solid;
+    height: 80px;
+    background-color: saddlebrown;
+    border: none;
+    animation-name: animation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+ }
+ 
+ 
